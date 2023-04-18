@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/ws0418/pom.xml" />
+        <option value="$PROJECT_DIR$/ws0420/pom.xml" />
+        <option value="$PROJECT_DIR$/day022/pom.xml" />
+        <option value="$PROJECT_DIR$/day023/pom.xml" />
+        <option value="$PROJECT_DIR$/ws0418_XML/pom.xml" />
+        <option value="$PROJECT_DIR$/ws0418_ANN/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/ws0420_ANN/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
