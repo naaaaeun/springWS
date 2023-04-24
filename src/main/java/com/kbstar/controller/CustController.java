@@ -30,11 +30,11 @@ public class CustController {
     @RequestMapping("/all")
     public String all(Model model) {
         List<CustDTO> list=new ArrayList<>();
-        list.add(new CustDTO("id01","pwd" ,"pwd", "james1"));
-        list.add(new CustDTO("id02","pwd" ,"pwd", "james2"));
-        list.add(new CustDTO("id03","pwd" ,"pwd", "james3"));
-        list.add(new CustDTO("id04","pwd" ,"pwd", "james4"));
-        list.add(new CustDTO("id05","pwd" ,"pwd", "james5"));
+        list.add(new CustDTO("id01","pwd" , "james1"));
+        list.add(new CustDTO("id02","pwd" ,"james2"));
+        list.add(new CustDTO("id03","pwd" ,"james3"));
+        list.add(new CustDTO("id04","pwd" ,"james4"));
+        list.add(new CustDTO("id05","pwd" ,"james5"));
         model.addAttribute("clist",list);
 
         model.addAttribute("left",dir+"left");
@@ -43,7 +43,7 @@ public class CustController {
     }
     @RequestMapping("/get")
     public String get(Model model, String id) {
-        CustDTO cust = new CustDTO("id","xxx", "xxx","james");
+        CustDTO cust = new CustDTO("id","xxx", "james");
         model.addAttribute("gcust",cust);
         model.addAttribute("left",dir+"left");
         model.addAttribute("center",dir+"get");

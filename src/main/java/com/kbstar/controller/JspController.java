@@ -26,7 +26,7 @@ public class JspController {
     public String jsp01(Model model) {
         model.addAttribute("num",11111);
 
-        CustDTO cust=new CustDTO("id01","pwd" ,"pwd", "james");
+        CustDTO cust=new CustDTO("id01","pwd", "james");
         model.addAttribute("rcust",cust);
 
         Date date =new Date();
@@ -39,7 +39,7 @@ public class JspController {
     @RequestMapping("/jsp02")
     public String jsp02(Model model) {
         model.addAttribute("num",1);
-        CustDTO cust=new CustDTO("id01","pwd" ,"pwd", "james");
+        CustDTO cust=new CustDTO("id01","pwd", "james");
         model.addAttribute("rcust",cust);
         Date date =new Date();
         model.addAttribute("cdate",date);
@@ -50,11 +50,11 @@ public class JspController {
     @RequestMapping("/jsp03")
     public String jsp03(Model model) {
         List<CustDTO> list=new ArrayList<>();
-        list.add(new CustDTO("id01","pwd" ,"pwd", "james1"));
-        list.add(new CustDTO("id02","pwd" ,"pwd", "james2"));
-        list.add(new CustDTO("id03","pwd" ,"pwd", "james3"));
-        list.add(new CustDTO("id04","pwd" ,"pwd", "james4"));
-        list.add(new CustDTO("id05","pwd" ,"pwd", "james5"));
+        list.add(new CustDTO("id01","pwd" , "james1"));
+        list.add(new CustDTO("id02","pwd" ,"james2"));
+        list.add(new CustDTO("id03","pwd" ,"james3"));
+        list.add(new CustDTO("id04","pwd" ,"james4"));
+        list.add(new CustDTO("id05","pwd" ,"james5"));
         model.addAttribute("clist",list);
         model.addAttribute("left",dir+"left");
         model.addAttribute("center",dir+"jsp03");
